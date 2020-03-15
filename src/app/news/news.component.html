@@ -1,0 +1,22 @@
+<p>
+  news works!
+</p>
+
+<input type="button" (click)='getdata()' value='get请求数据'/>
+
+<ul>
+  <li *ngFor="let item of list" >
+    {{item.title}}
+  </li>
+</ul>
+
+<hr>
+
+<input type="button" (click)='dologin()' value='post提交数据'/>
+
+<hr>
+
+<input type="button" (click)='getjsonpdata()' value='jsonp请求数据'/>
+<hr>
+
+<input type="button" (click)='getaxios()' value='axios请求数据'/>
